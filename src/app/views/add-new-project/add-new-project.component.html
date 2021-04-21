@@ -1,0 +1,38 @@
+<nb-card class="card">
+  <nb-card-body>
+    <form [formGroup]="newProject" (ngSubmit)="onSubmit()">
+      <input
+        fullWidth
+        type="text"
+        nbInput
+        placeholder="Project name"
+        formControlName="projectName"
+      />
+      <input
+        fullWidth
+        type="text"
+        nbInput
+        placeholder="Budget"
+        formControlName="budget"
+      />
+      <nb-select fullWidth placeholder="Platform" formControlName="platform">
+        <nb-option value="upwork">Upwork</nb-option>
+        <nb-option value="freelancer">Freelancer</nb-option>
+        <nb-option value="other">Other</nb-option>
+      </nb-select>
+      <nb-select placeholder="Type" formControlName="type">
+        <nb-option value="logo">Logo & graphic design</nb-option>
+        <nb-option value="web">UI/UX & web desgin</nb-option>
+        <nb-option value="dev">Development</nb-option>
+      </nb-select>
+      <input
+        nbInput
+        placeholder="Due date"
+        [nbDatepicker]="dateTimePicker"
+        formControlName="due"
+      />
+      <nb-datepicker #dateTimePicker format="dd.MM.yyyy"></nb-datepicker>
+      <button nbButton status="success" type="submit">add</button>
+    </form>
+  </nb-card-body>
+</nb-card>

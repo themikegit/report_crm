@@ -1,0 +1,6 @@
+<nb-list class="list">
+  <nb-list-item *ngFor="let project of projects | async" class="list-row">
+    <span> {{ project.projectName }}</span>
+    <span>{{ project.budget }}</span>
+  </nb-list-item>
+</nb-list>

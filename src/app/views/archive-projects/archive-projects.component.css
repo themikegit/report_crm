@@ -1,0 +1,10 @@
+.list {
+}
+
+.list-row {
+  border-bottom: 1px solid #8e9cb3;
+}
+
+.list-row span {
+  width: 200px;
+}

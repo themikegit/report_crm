@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "project-manager-51c83": {
+      "hosting": {
+        "nebular": [
+          "project-manager-51c83"
+        ]
+      }
+    }
+  }
+}
